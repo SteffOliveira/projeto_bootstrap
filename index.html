@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Magic Girls Store</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>-->
+</head>
+
+<body>
+    <!--navegador navbar -->
+    <nav class="navbar sticky-top navbar-expand-lg navbar navbar-dark" style="background-color: pink;">
+        <!--imagem e texto-->
+        <a class="navbar-brand" href="#">
+            MAGIC GIRLS STORE
+        </a>
+        <!--botões de navegação-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+            <!--aqui seria para substituir o menu hamburguer por texto-->
+        </button>
+        <div class="nav justify-content-end collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#carouselExempleIndicators">Home<span class="sr-only">(Página
+                            atual)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Sobre</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Departamentos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="_blanck">Acessórios</a>
+                        <a class="dropdown-item" href="_blanck">Brinquedos e Colecionavéis</a>
+                        <a class="dropdown-item" href="_blanck">Casa</a>
+                        <a class="dropdown-item" href="_blanck">Jogos</a>
+                        <a class="dropdown-item" href="_blanck">Vestuário</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <!--barra de pesquisa-->
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="search" placeholder="Busca algo especial?"
+                    aria-label="Search">
+                <button class="btn btn-outline-info" style="background-color:whitesmoke;" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+
+    <section class="caroussel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="../src/car-01.jpg" alt="Primeiro Slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="../src/car-02.jpg" alt="Segundo Slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <!--sobre MGS-->
+    <section id="about" class="about">
+        <div class="container">
+            <!--pode ser simples para segurar tudo dentro ou fluid para aproveitar todo espaço-->
+            <div class="about-text text-center">
+                <h3>SOBRE A MGS</h3>
+            </div>
+            <div class="about-img" style="width: 10%; float: left;">
+                ​<picture>
+                    <img src="../src/titulo.jpg" class="img-fluid"
+                        alt="imagem campanha lute como uma garota">
+                </picture>
+            </div>
+            <p>O principal objetivo da Magic Girls Store é atender meninas e mulheres de todas as
+                idades, formas e cores!</p>
+            <p>Nossos produtos possuem temática geek e nerd e são nossa forma de incluir
+                gestantes, plus-size entre outros nesse nicho cada vez mais popular...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aliquam quo sint omnis totam modi neque,
+                aliquid nihil minima voluptas, vitae facilis maiores fugiat ab tempora. Reprehenderit accusamus
+                voluptates libero.</p>
+        </div>
+    </section>
+
+    <!--cards destaques-->
+    <section id="destaques">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2>DESTAQUES</h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <div class="container">
+                            <img class="card-img-top" src="../src/card1.jpg"
+                                alt="Imagem de capa do card gestantes">
+                            <div class="card-body">
+                                <h5 class="card-title">Gestantes</h5>
+                                <p class="card-text text-justify">Sabemos que algumas mulheres preferem não ter
+                                    filhas(os), mas para
+                                    as
+                                    que escolheram ter, nós temos opções legais para essa fase e também para a sua e/ou
+                                    seu
+                                    bebê.</p>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <button type="button" class="btn btn-outline-info">
+                                    <a href="_blanck" target="_blanck">Acesse</a>
+                                </button>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <img class="card-img-top" src="../src/card2.jpeg"
+                                alt="Imagem de capa do card cosplay">
+                            <div class="card-body">
+                                <h5 class="card-title">Cosplay</h5>
+                                <p class="card-text text-justify">Você gosta de fazer cosplay, mas nunca encontra algo
+                                    que lhe cai
+                                    bem?
+                                    Seus problemas acabaram.</p>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <button type="button" class="btn btn-outline-info">
+                                    <a href="_blanck" target="#">Acesse</a>
+                                </button>
+                            </blockquote>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <img class="card-img-top" src="../src/card3.jpeg"
+                                alt="Imagem de capa do card novidades">
+                            <div class="card-body">
+                                <h5 class="card-title">Novidades</h5>
+                                <p class="card-text text-justify">Aqui na Magic Girls Store nós sabemos que é muito
+                                    importente
+                                    promover a
+                                    inclusão de pessoas com deficência no ramo nerd/geek, por isso, sempre divulgamos
+                                    novidades que tornem essa tarefa mais fácil.
+                                </p>
+                            </div>
+                            <blockquote class="blockquote text-center">
+                                <button type="button" class="btn btn-outline-info" data-toggle="modal"
+                                    data-target="#modalExemplo-1">
+                                    Acesse
+                                </button>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <!--usar somente para caixinha, se for link não tem-->
+            <div class="modal fade" id="modalExemplo-1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Novidades</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            Olha o que a empatia e o amor podem fazem. A mãe de uma criança com deficiência teve a ideia
+                            de
+                            customizar o aparelho auditvo com a tematíca nerd e geek. Super bacana essa iniciativa ne?
+                            Confira a história completa no link abaixo e não esqueça de se cadastrar no site para
+                            receber
+                            promoções e novidades como essa ;)
+                            <blockquote class="blockquote text-center">
+                                <button type="button" class="btn btn-outline-info">
+                                    <a href="https://br.pinterest.com/pin/608619337118049552/" target="_blanck">Leia
+                                        mais</a>
+                                </button>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--form-->
+    <div id="contact"></div>
+    <section class="container-contato mt-4">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-12 text-center my-5">
+                    <h2>CADASTRO</h2>
+                </div>
+            </div>
+            <!--dados-->
+            <div class="row justify-content-center mb-5">
+                <div class="col-sm-12 col-md-10 col-lg-8">
+                    <form id="contact" name="contato" method="POST"><input type="hidden" name="form-name"
+                            value="contato">
+                        <div class="form-row">
+                            <div class="form-group col-sm-10">
+                                <label for="inputName">Nome</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                            <div class="form-group col-sm-10">
+                                <label for="inputLastName">E-mail</label>
+                                <input type="text" class="form-control" id="inputLastName">
+                            </div>
+                            <div class="form-group justify-content-center col-sm-10">
+                                <label for="inputAddress">Endereço</label>
+                                <input type="text" class="form-control" id="inputAddress">
+                            </div>
+                            <div class="form-group justify-content-center col-sm-5">
+                                <label for="inputCity">Cidade</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-sm-5">
+                                <label for="inputPhone">Telefone</label>
+                                <input type="text" class="form-control" id="inputPhone">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-outline-info"
+                                    style="background-color:whitesmoke ;">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--institucional-->
+    <section class="btn-outline-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4 text-center">
+                    <h4>Carrinho</h4>
+                    <div class="list-group text-center">
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Meus Pedidos</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-dark">Ajuda</a>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="text-center">
+                        <h4>MAGIC GIRLS STORE</h4>
+                        <p>Suas compras com estilo, qualidade e segurança em um só lugar...</p>
+                        <p>www.mgstore.com</p>
+                        <p>+55(11)1631-0811</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--footer-->
+        <footer class="bg-dark p-3">
+            <div class="container">
+                <p class="text-white text-center m-0">Copyright© 2019 Steff Oliveira
+        </footer>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
